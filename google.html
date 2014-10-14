@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    html, body, header, nav, h1, ul, li, main, section, article, aside, h2, p, a, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    background: transparent;
+  }
+
+    body {
+      font-family: sans-serif;
+    }
+    .nav-links{
+      float: right;
+      padding: 20px;
+    }
+    li{
+      list-style: none;
+    }
+    .nav-links > li{
+      float: left;
+      padding: 20px;
+    }
+
+    .middle {
+      margin: 0 auto;
+    }
+
+    .google {
+      margin: 0 auto;
+      width: 345px;
+    }
+
+    .google > img {
+      margin: 0 auto;
+      width: 345px;
+      height: 125px;
+    }
+
+    .search-bar{
+      margin: 0 auto;
+      width: 715px;
+      background: purple;
+    }
+
+    .search-bar > input {
+      width: 715px;
+      height: 35px;
+    }
+
+    .buttons {
+/*      background: pink;*/
+      width: 400px;
+      margin: 0 auto;
+    }
+    .sign-in-button{
+      color: white;
+      font-weight: bold;
+      background: #346DF7;
+      padding: 10px 0px 10px 15px;
+      width: 70px;
+      height: 20px;
+    }
+
+    .buttons li {
+      float: left;
+      background: #EFEFEF;
+      margin: 18px;
+      padding: 18px;
+      font-weight: bold;
+      border: 1px solid #D1D1D1;
+    }
+
+    .group:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    footer {
+      width: 100%;
+      position: fixed;
+      bottom: 0px;
+      background: #EEE;
+
+    }
+
+    .left-footer-links {
+      float: left;
+    }
+    .left-footer-links > li{
+      float: right;
+      padding: 20px;
+    }
+    .right-footer-links{
+      float: right;
+    }
+    .right-footer-links > li{
+      float: left;
+      padding: 20px;
+    }
+
+
+  </style>
+  <body>
+    <h1>
+      <div class="group">
+        <ul class="nav-links">
+          <li><a href="#">+You</a></li>
+          <li><a href="#">Gmail</a></li>
+          <li><a href="#">Images</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#"><div class="sign-in-button">Sign In<div></a></li>
+        </ul>
+      </div>
+    </h1>
+
+    <main class="middle">
+      <section class="google"><img src="logo11w.png" width="538" height="190" alt="Logo11w"></section>
+      <section class="search-bar"><input type="text"></section>
+      <div class="group">
+        <section class="buttons">
+           <ul>
+             <li>
+               <a href="#">Google Search</a>
+
+             </li>
+             <li>
+               <a href="#">I'm Feeling Lucky</a>
+             </li>
+           </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <ul class="left-footer-links">
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="right-footer-links">
+        <li><a href="#">Privacy & Terms</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

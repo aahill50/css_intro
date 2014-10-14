@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  html, body, header, nav, h1, ul, li, main, section, article, aside, h2, p, a, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    background: transparent;
+  }
+
+  body {
+    font-family: sans-serif;
+    background: #E9E9E9;
+  }
+
+  .page-header {
+     background: red;
+     color: white;
+     border-bottom: 3px solid black;
+  }
+
+  .nav-bar {
+    width: 894px;
+    margin: 0 auto;
+  }
+
+  .title {
+    float: left;
+    padding: 10px 22px 10px 22px;
+    font-weight: bold;
+    border-left: 3px solid black;
+  }
+
+  .nav-links{
+    float: right;
+
+    border-right: 3px solid black;
+
+  }
+
+  .nav-links > li {
+    float: left;
+     padding: 10px 22px 10px 22px;
+     border-left: 3px solid black;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .all-content {
+    width: 894px;
+    margin: 0 auto;
+  }
+
+  .middle {
+    background: white;
+    border-left: 3px solid #D4D4D4;
+    border-right: 3px solid #D4D4D4;
+    float: left;
+    padding: 20px;
+  }
+
+  .sidebar{
+    float: left;
+    width: 200px;
+    padding-right: 20px;
+    border-right: 3px solid #D4D4D4;
+  }
+
+  .main-content{
+    float: right;
+    width: 590px;
+    padding-left: 35px;
+  }
+
+  .section-title {
+    padding-bottom: 25px;
+    font-weight: bold;
+    font-size: 190%
+  }
+
+  .copy-write {
+    float: left;
+  }
+
+  .footer-links {
+    float: right;
+  }
+
+  .footer-links > li{
+    float: left;
+    margin-left: 20px;
+  }
+
+  .group:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .page-footer{
+    padding: 20px;
+    background: #D4D4D4;
+    border: 3px solid #C0C0C0;
+    width: 848px;
+    color: #878787;
+  }
+  li > span {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  /*  display: inline;*/
+    background: black;
+/*    padding: 4px;*/
+/*    margin: 0 auto;*/
+    margin-left: 5px;
+
+    float: right;
+    font-size: 75%;
+  }
+
+  .notification-number{
+    font-weight: bold;
+    padding-top: 2px;
+    padding-left: 5px;
+  }
+
+  </style>
+  <body>
+    <header class="page-header">
+      <div class="group">
+        <nav class="nav-bar">
+          <h1 class="title">
+            App Academy Students
+          </h1>
+          <ul class="nav-links">
+            <li><a href>Home</a></li>
+            <li><a href>Notifications</a><span>
+              <section class="notification-number">
+                 3
+              </section>
+            </span></li>
+            <li><a href>Messages</a></li>
+            <li><a href>Settings</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="all-content">
+      <div class="group">
+    <section class="middle">
+        <aside class="sidebar">
+          <h2 class="section-title">
+            Sidebar
+          </h2>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </aside>
+
+        <article class="main-content">
+           <h2 class="section-title">
+             Content
+           </h2>
+           <p class="paragraph"></p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </article>
+
+      </section>
+      </div>
+      <footer class="page-footer">
+        <div class="group">
+        <section class="copy-write">
+          &copy 2013 App Academy.
+        </section>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+      </footer>
+
+    </main>
+  </body>
+</html>

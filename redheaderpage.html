@@ -36,15 +36,18 @@
 
   .nav-links{
     float: right;
-
     border-right: 3px solid black;
-
   }
 
   .nav-links > li {
     float: left;
      padding: 10px 22px 10px 22px;
      border-left: 3px solid black;
+     position: relative;
+  }
+
+  .nav-links > li:hover {
+    background: black;
   }
 
   ul {
@@ -83,7 +86,7 @@
     font-size: 190%
   }
 
-  .copy-write {
+  .copyright {
     float: left;
   }
 
@@ -122,10 +125,40 @@
     font-size: 75%;
   }
 
+  li:hover > span {
+    background: red;
+  }
+
+  .drop-down{
+    position: absolute;
+    display: none;
+    color: black;
+    top: 40px;
+    left: -4px;
+    border-top: 1px solid black;
+  }
+
+  li:hover > .drop-down{
+    display: block;
+  }
+
   .notification-number{
     font-weight: bold;
     padding-top: 2px;
     padding-left: 5px;
+  }
+
+  .drop-down > li{
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    background: white;
+    width: 300px;
+    padding: 5px 0 5px 10px;
+  }
+
+  .drop-down > li:hover{
+    background: #C0C0C0;
   }
 
   </style>
@@ -138,11 +171,19 @@
           </h1>
           <ul class="nav-links">
             <li><a href>Home</a></li>
-            <li><a href>Notifications</a><span>
-              <section class="notification-number">
-                 3
-              </section>
-            </span></li>
+            <li><a href>Notifications</a>
+              <span>
+                <section class="notification-number">
+                   3
+                </section>
+
+              </span>
+              <ul class="drop-down">
+                <li><a href="#">Someone liked your picture</a></li>
+                <li><a href="#">You have a new friend request</a></li>
+                <li><a href="#">Welcome to App Academy</a></li>
+              </ul>
+            </li>
             <li><a href>Messages</a></li>
             <li><a href>Settings</a></li>
           </ul>
@@ -174,7 +215,7 @@
       </div>
       <footer class="page-footer">
         <div class="group">
-        <section class="copy-write">
+        <section class="copyright">
           &copy 2013 App Academy.
         </section>
         <ul class="footer-links">
